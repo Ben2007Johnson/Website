@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+:root {
+    --color1: gold;
+    --color2: green;
+    --background: rgb(31,31,31);
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to top right, white , black);
+}
+
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    width: 350px;
+}
+
+.progress-container::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    translate: translateY(-50%);
+}
+
+.progress {
+    background-color: gold;
+    height: 4px;
+    width: 33%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%);
+    transition: width 0.5s ease;
+}
+
+.circle {
+    background-color: silver;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+    transition: 0.7s ease;
+}
+
+.circle.active {
+    border-color: gold;
+}
+
+.btn {
+    background-color: silver;
+    color: black;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+    border: 1;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:disabled {
+    background-color: var(--silver);
+    cursor: not-allowed;
+    transform: scale(1);
+}

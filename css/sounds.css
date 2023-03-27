@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body {
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom right, green , black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    margin: hidden;
+    overflow: hidden;
+}
+
+.btn {
+    background-color: silver;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1.5rem 3rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    opacity: 99%;
+}

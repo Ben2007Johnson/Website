@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body {
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    background: radial-gradient(white, green, black);
+    height: 100vh;
+}
+
+.container {
+    background-color: radial-gradient(white, green, black);
+    border-radius: 10px;
+    text-align: center;
+    width: 800px;
+    padding: 50px 20px;
+}
+
+h3 {
+    margin: 0;
+    opacity: 0.5s;
+    letter-spacing: 2px;
+}
+
+.joke {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+    color: silver;
+}
+
+.btn {
+    background-color: silver;
+    color: black;
+    border: 0;
+    border-radius: 10px;
+    padding: 14px 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
