@@ -30,7 +30,7 @@ function update() {
 
     progress.style.width = (currentActive -1) /3 *100 + '%'
 
-    if (currentActiv == 1) {
+    if (currentActive == 1) {
         prev.disabled = true
     }
     else if(currentActive == 4) {
