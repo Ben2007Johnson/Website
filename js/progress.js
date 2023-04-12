@@ -1,7 +1,7 @@
 const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
-const circles = document.getElementById('.circle')
+const circles = document.querySelectorAll('.circle')
 
 
 let currentActive = 1
@@ -23,6 +23,7 @@ prev.addEventListener('click', () => {
     if (currentActive < 1) {
         currentActive = 1
     }
+    update()
 })
 
 
